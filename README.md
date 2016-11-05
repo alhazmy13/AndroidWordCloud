@@ -36,7 +36,7 @@ dependencies {
 To use the library, you must include the WordCloudView class in your project. A simple solution is to reference it directly into your layout:
 
 ```xml
-<net.alhazmy13.wordclouds.WordCloudView
+<net.alhazmy13.wordcloud.WordCloudView
        android:id="@+id/wordCloud"
        android:layout_width="match_parent"
        android:layout_height="match_parent" />
