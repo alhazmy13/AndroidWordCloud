@@ -8,6 +8,7 @@ import android.webkit.WebView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * The type Word cloud view.
@@ -19,6 +20,8 @@ public class WordCloudView extends WebView {
     private int old_max;
     private int parentWidth;
     private int parentHeight;
+    private int[] colors;
+    private Random random;
 
     /**
      * Instantiates a new Word cloud view.
@@ -32,6 +35,8 @@ public class WordCloudView extends WebView {
         this.dataSet = new ArrayList<>();
         this.parentHeight = 300;
         this.parentWidth = 450;
+        this.colors = new int[0];
+        this.random = new Random();
         //  init();
     }
 
@@ -88,7 +93,10 @@ public class WordCloudView extends WebView {
         StringBuilder sb = new StringBuilder();
         sb.append("[");
         for (int i = 0; i < dataSet.size(); i++) {
-            sb.append("{\"word\":\"").append(dataSet.get(i).getText()).append("\",\"size\":\"").append(scale(dataSet.get(i).getWeight())).append("\"}");
+            sb.append("{\"word\":\"").append(dataSet.get(i).getText());
+            sb.append("\",\"size\":\"").append(scale(dataSet.get(i).getWeight()));
+            sb.append("\",\"color\":\"");
+            sb.append(getColor()).append("\"}");
             if (i < dataSet.size() - 1) {
                 sb.append(",");
             }
@@ -135,4 +143,13 @@ public class WordCloudView extends WebView {
         }
     }
 
+    public void setColors(int[] colors) {
+        this.colors = colors;
+    }
+
+    public String getColor() {
+        if(colors.length == 0)
+            return "0";
+        return "#" + Integer.toHexString(colors[random.nextInt(colors.length-1)]).substring(2);
+    }
 }

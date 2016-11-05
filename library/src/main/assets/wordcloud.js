@@ -4,10 +4,10 @@ var loadCloud = function(isAndroid, element, userChosenFontFace, data,parentWidt
   console.log('parentHeight: ' + parentHeight);
 
 var test  = $.parseJSON(data);
- console.log(test);
-var t = test.map(function(d) {  return {text: d.word, size: d.size};});
+var t = test.map(function(d) {  return {text: d.word, size: d.size, color: d.color};});
+ console.log(t);
 
-var fill = d3.scale.category20();
+    var fill = d3.scale.category20();
     var layout = d3.layout.cloud()
         .size([parentHeight, parentWidth ])
        .words(t)
@@ -28,7 +28,14 @@ var fill = d3.scale.category20();
         .enter().append("text")
           .style("font-size", function(d) { return d.size + "px"; })
           .style("font-family", userChosenFontFace)
-          .style("fill", function(d, i) { return fill(i); })
+          .style("fill", function(d, i) {
+            if(new String(d.color).valueOf() == new String("0").valueOf()){
+              console.log(d.color);
+               return i ;
+               } else{
+                return d.color;
+                }
+          })
           .attr("text-anchor", "middle")
           .attr("transform", function(d) {
             return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";

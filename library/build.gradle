@@ -14,7 +14,7 @@ ext {
     siteUrl = 'https://github.com/alhazmy13/AndroidWordCloud'
     gitUrl = 'https://github.com/alhazmy13/AndroidWordCloud.git'
 
-    libraryVersion = '0.1.0'
+    libraryVersion = '0.1.0-beta'
 
     developerId = 'alhazmy13'
     developerName = 'Abdullah Alhazmy'

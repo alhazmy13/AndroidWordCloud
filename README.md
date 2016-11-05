@@ -2,7 +2,7 @@
 # Android Word Cloud
 ![](https://img.shields.io/badge/Platform-Android-brightgreen.svg)
 ![](https://img.shields.io/packagist/l/doctrine/orm.svg)
-![](https://img.shields.io/badge/version-0.1.0_beta-blue.svg)
+![](https://img.shields.io/badge/version-0.1.1_beta-blue.svg)
 
 ------
   <img src="https://cloud.githubusercontent.com/assets/4659608/20027390/5e40ecf6-a324-11e6-95e4-31dfe850c49b.png" width="400">
@@ -14,9 +14,9 @@
 
 ```xml
 <dependency>
-<groupId>net.alhazmy13.wordcloud</groupId>
+<groupId>net.alhazmy13.wordclouds</groupId>
 <artifactId>library</artifactId>
-<version>0.1.0-beta</version>
+<version>0.1.1-beta</version>
 </dependency>
 ```
 
@@ -25,7 +25,7 @@
 
 ```gradle
 dependencies {
-	compile 'net.alhazmy13.wordcloud:library:0.1.0-beta'
+	compile 'net.alhazmy13.wordclouds:library:0.1.1-beta'
 }
 ```
 
@@ -33,7 +33,7 @@ dependencies {
 To use the library, you must include the WordCloudView class in your project. A simple solution is to reference it directly into your layout:
 
 ```xml
-<net.alhazmy13.wordcloud.WordCloudView
+<net.alhazmy13.wordclouds.WordCloudView
        android:id="@+id/wordCloud"
        android:layout_width="match_parent"
        android:layout_height="match_parent" />
@@ -49,9 +49,21 @@ WordCloudView wordCloud = (WordCloudView) findViewById(R.id.wordCloud);
 
 And make sure to call `notifyDataSetChanged` to update view.
 
+## Additional Options 
+###Setting Color
+
+there's two option to change the colors, either by passing an array of `int` or by using a predefined colors from `ColorTemplate` class
+
+```java
+wordCloud.setColors(ColorTemplate.MATERIAL_COLORS);
+//OR
+wordCloud.setColors(new int[] {Color.BLUE, Color.GRAY, Color.GREEN, Color.CYAN });
+
+```
+
 ## Features to be added:
 - Add `onClickEvent` for each word.
-- Add a custom color for each word.
+- ~~Add a custom color for each word~~.
 - Add a custom font.
 
 

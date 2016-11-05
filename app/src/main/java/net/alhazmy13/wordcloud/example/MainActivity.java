@@ -1,5 +1,6 @@
 package net.alhazmy13.wordcloud.example;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -23,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
         generateRandomText();
         WordCloudView wordCloud = (WordCloudView) findViewById(R.id.wordCloud);
         wordCloud.setDataSet(list);
+        wordCloud.setColors(new int[] {Color.BLUE, Color.GRAY, Color.GREEN, Color.CYAN });
         wordCloud.notifyDataSetChanged();
+
 
     }
 
