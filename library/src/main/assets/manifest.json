@@ -1,0 +1,13 @@
+{
+  "name": "Wordcloud",
+  "manifest_version": 2,
+  "version": "1.7",
+  "description": "Wordcloud ",
+  "app": {
+    "launch": {
+      "local_path": "wordcloud.html"
+    }
+  },
+  "offline_enabled": true
+  
+}
