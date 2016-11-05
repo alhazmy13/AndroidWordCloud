@@ -62,9 +62,9 @@ wordCloud.setColors(new int[] {Color.BLUE, Color.GRAY, Color.GREEN, Color.CYAN }
 ```
 
 ## Features to be added:
-- Add `onClickEvent` for each word.
-- ~~Add a custom color for each word~~.
-- Add a custom font.
+- `onClickEvent` for each word.
+- ~~Custom color for each word~~.
+- Custom font.
 
 
 ## Credits 
