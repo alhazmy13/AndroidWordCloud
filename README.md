@@ -1,10 +1,17 @@
 
+</p>
 # Android Word Cloud
 ![](https://img.shields.io/badge/Platform-Android-brightgreen.svg)
 ![](https://img.shields.io/packagist/l/doctrine/orm.svg)
 ![](https://img.shields.io/badge/version-0.1.1_beta-blue.svg)
+<p align="center">
+<img width="600" alt="wordcloud-2" src="https://cloud.githubusercontent.com/assets/4659608/20030747/4f1aae08-a37c-11e6-9fc4-ceec6ee7fe01.png">
+</p>
+
 
 ------
+
+## Screenshots 
   <img src="https://cloud.githubusercontent.com/assets/4659608/20027390/5e40ecf6-a324-11e6-95e4-31dfe850c49b.png" width="400">
   <img src="https://cloud.githubusercontent.com/assets/4659608/20027391/5e76fd3c-a324-11e6-99d9-14fae8c85838.png" width="400">
 
