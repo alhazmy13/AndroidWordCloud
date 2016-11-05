@@ -14,7 +14,7 @@
 
 ```xml
 <dependency>
-<groupId>net.alhazmy13.wordclouds</groupId>
+<groupId>net.alhazmy13.wordcloud</groupId>
 <artifactId>library</artifactId>
 <version>0.1.0-beta</version>
 </dependency>
@@ -25,7 +25,7 @@
 
 ```gradle
 dependencies {
-	compile 'net.alhazmy13.wordclouds:library:0.1.0-beta'
+	compile 'net.alhazmy13.wordcloud:library:0.1.0-beta'
 }
 ```
 
