@@ -3,7 +3,7 @@
 # Android Word Cloud
 ![](https://img.shields.io/badge/Platform-Android-brightgreen.svg)
 ![](https://img.shields.io/packagist/l/doctrine/orm.svg)
-![](https://img.shields.io/badge/version-0.1.1_beta-blue.svg)
+![](https://img.shields.io/badge/version-0.1.2_beta-blue.svg)
 
 ------
 
@@ -19,7 +19,7 @@
 <dependency>
 <groupId>net.alhazmy13.wordcloud</groupId>
 <artifactId>library</artifactId>
-<version>0.1.1-beta</version>
+<version>0.1.2-beta</version>
 </dependency>
 ```
 
@@ -28,7 +28,7 @@
 
 ```gradle
 dependencies {
-	compile 'net.alhazmy13.wordcloud:library:0.1.1-beta'
+	compile 'net.alhazmy13.wordcloud:library:0.1.2-beta'
 }
 ```
 

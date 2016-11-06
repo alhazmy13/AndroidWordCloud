@@ -18,10 +18,10 @@ public class WordCloudView extends WebView {
     private List<WordCloud> dataSet;
     private int old_min;
     private int old_max;
-    private int parentWidth;
-    private int parentHeight;
     private int[] colors;
     private Random random;
+    private int parentHeight;
+    private int parentWidth;
 
     /**
      * Instantiates a new Word cloud view.
@@ -147,9 +147,21 @@ public class WordCloudView extends WebView {
         this.colors = colors;
     }
 
-    public String getColor() {
+    private String getColor() {
         if(colors.length == 0)
             return "0";
         return "#" + Integer.toHexString(colors[random.nextInt(colors.length-1)]).substring(2);
+    }
+
+    /**
+     * View size.
+     *
+     * @param width  the width
+     * @param height the height
+     */
+    public void setSize(int width, int height) {
+        this.parentWidth = width;
+        this.parentHeight = height;
+
     }
 }
