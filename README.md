@@ -3,7 +3,7 @@
 # Android Word Cloud
 ![](https://img.shields.io/badge/Platform-Android-brightgreen.svg)
 ![](https://img.shields.io/packagist/l/doctrine/orm.svg)
-![](https://img.shields.io/badge/version-0.1.2_beta-blue.svg)
+![](https://img.shields.io/badge/version-0.2.0_beta-blue.svg)
 
 ------
 
@@ -19,7 +19,7 @@
 <dependency>
 <groupId>net.alhazmy13.wordcloud</groupId>
 <artifactId>library</artifactId>
-<version>0.1.2-beta</version>
+<version>0.2.0-beta</version>
 </dependency>
 ```
 
@@ -28,7 +28,7 @@
 
 ```gradle
 dependencies {
-	compile 'net.alhazmy13.wordcloud:library:0.1.2-beta'
+	compile 'net.alhazmy13.wordcloud:library:0.2.0-beta'
 }
 ```
 
@@ -61,7 +61,11 @@ there's two option to change the colors, either by passing an array of `int` or 
 wordCloud.setColors(ColorTemplate.MATERIAL_COLORS);
 //OR
 wordCloud.setColors(new int[] {Color.BLUE, Color.GRAY, Color.GREEN, Color.CYAN });
+```
+###Setting Scale Values
 
+```java
+wordCloud.setScale(MAX,MIN);
 ```
 
 ## Features to be added:
@@ -69,32 +73,6 @@ wordCloud.setColors(new int[] {Color.BLUE, Color.GRAY, Color.GREEN, Color.CYAN }
 - ~~Custom color for each word~~.
 - Custom font.
 
-
 ## Credits 
 - [d3-cloud](https://github.com/jasondavies/d3-cloud)
 
-
-## License
-------
-
-The MIT License (MIT)
-
-Copyright (c) 2015 Abdullah Alhazmy
-
-> Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-> The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.

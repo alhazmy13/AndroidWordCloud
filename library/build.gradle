@@ -14,7 +14,7 @@ ext {
     siteUrl = 'https://github.com/alhazmy13/AndroidWordCloud'
     gitUrl = 'https://github.com/alhazmy13/AndroidWordCloud.git'
 
-    libraryVersion = '0.1.2-beta'
+    libraryVersion = '0.2.0-beta'
 
     developerId = 'alhazmy13'
     developerName = 'Abdullah Alhazmy'
@@ -26,7 +26,7 @@ ext {
 }
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         minSdkVersion 15
@@ -47,7 +47,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:appcompat-v7:25.1.1'
     testCompile 'junit:junit:4.12'
 }
 apply from: './bintrayv1.gradle'
