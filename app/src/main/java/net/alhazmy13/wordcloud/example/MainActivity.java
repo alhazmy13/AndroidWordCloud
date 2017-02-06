@@ -2,6 +2,7 @@ package net.alhazmy13.wordcloud.example;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 
 import net.alhazmy13.example.R;
@@ -39,8 +40,6 @@ public class MainActivity extends AppCompatActivity {
             list.add(new WordCloud(s,random.nextInt(50)));
         }
     }
-
-
 }
 
 

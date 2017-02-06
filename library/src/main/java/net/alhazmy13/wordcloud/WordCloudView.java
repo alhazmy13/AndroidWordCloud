@@ -22,6 +22,8 @@ public class WordCloudView extends WebView {
     private Random random;
     private int parentHeight;
     private int parentWidth;
+    private int max;
+    private int min;
 
     /**
      * Instantiates a new Word cloud view.
@@ -35,6 +37,8 @@ public class WordCloudView extends WebView {
         this.dataSet = new ArrayList<>();
         this.parentHeight = 300;
         this.parentWidth = 450;
+        this.max = 100;
+        this.min = 20;
         this.colors = new int[0];
         this.random = new Random();
         //  init();
@@ -126,7 +130,7 @@ public class WordCloudView extends WebView {
         float x = inputY - old_min;
         float y = old_max - old_min;
         float percent = x / y;
-        return percent * (30 - 3) + 3;
+        return percent * (max - min) + min;
     }
 
 
@@ -163,5 +167,13 @@ public class WordCloudView extends WebView {
         this.parentWidth = width;
         this.parentHeight = height;
 
+    }
+
+    public void setScale(int max, int min) {
+        if(min > max){
+            throw new RuntimeException("MIN scale cannot be larger than MAX");
+        }
+        this.max = max;
+        this.min = min;
     }
 }
